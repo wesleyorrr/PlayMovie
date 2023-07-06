@@ -15,4 +15,11 @@ class MovieRepositoryImpl : MovieRepository {
             response.results
         }
     }
+
+    override suspend fun getPopularMovies(): List<Movie> {
+        return withContext(Dispatchers.IO) {
+            val response = movieApiService.getPopularMovies(ApiClient.API_KEY)
+            response.results
+        }
+    }
 }

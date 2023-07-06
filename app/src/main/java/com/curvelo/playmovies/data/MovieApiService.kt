@@ -9,4 +9,9 @@ interface MovieApiService {
         @Query("api_key") apiKey: String,
         @Query("query") query: String
     ): MovieSearchResponse
+
+    @GET("movie/popular")
+    suspend fun getPopularMovies(
+        @Query("api_key") apiKey: String
+    ): MovieSearchResponse
 }

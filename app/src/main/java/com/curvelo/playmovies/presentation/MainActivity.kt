@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.movies.observe(this, Observer { movies ->
             adapter.setMovies(movies)
+
         })
+
+
 
         binding.searchButton.setOnClickListener {
             val query = binding.searchEditText.text.toString()

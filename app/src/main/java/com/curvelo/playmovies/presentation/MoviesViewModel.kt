@@ -13,6 +13,18 @@ class MoviesViewModel(private val movieRepository: MovieRepository) : ViewModel(
     private val _movies = MutableLiveData<List<Movie>>()
     val movies: LiveData<List<Movie>> get() = _movies
 
+    init {
+        // Carrega os filmes iniciais ao abrir o aplicativo
+        loadMovies()
+    }
+
+    private fun loadMovies() {
+        CoroutineScope(Dispatchers.Main).launch {
+            val result = movieRepository.getPopularMovies()
+            _movies.value = result
+        }
+    }
+
     fun searchMovies(query: String) {
         CoroutineScope(Dispatchers.Main).launch {
             val result = movieRepository.searchMovies(query)
