@@ -7,12 +7,12 @@ import com.curvelo.playmovies.data.Movie
 import com.curvelo.playmovies.databinding.ItemMovieBinding
 import com.squareup.picasso.Picasso
 
-class MovieAdapter( private var movies: List<Movie> = emptyList()) : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+    private var movies: List<Movie> = emptyList()
 
-
-   fun setMovies(movies: List<Movie>) {
-      this.movies = movies
-    notifyDataSetChanged()
+    fun setMovies(movies: List<Movie>) {
+        this.movies = movies
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
