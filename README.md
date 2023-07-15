@@ -27,7 +27,12 @@ O Movie App é um aplicativo de filmes que utiliza a API do The Movie Database (
 ## Imagens do Projeto
 
 <h1 align="center">
-   <img src="https://github.com/wesleyorrr/Listagem-de-reposit-rio/blob/master/app/repo3.jpg" height="425" />
-   <img src="https://github.com/wesleyorrr/Listagem-de-reposit-rio/blob/master/app/repo2.jpg" height="425" />
-	 <img src="https://github.com/wesleyorrr/Listagem-de-reposit-rio/blob/master/app/repo.jpg" height="425" />
-
+   <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img2.jpg" height="425" />
+    <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img3.jpg" height="425" />
+       <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img4.jpg" height="425" />
+          <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img5.jpg" height="425" />
+	     <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img6.jpg" height="425" />
+	         <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img7.jpg" height="425" />
+		     <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img8.jpg" height="425" />
+		  	 <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img9.jpg" height="425" />
+       				  <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img10.jpg" height="425" />
