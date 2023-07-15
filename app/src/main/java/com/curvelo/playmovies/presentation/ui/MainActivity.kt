@@ -1,13 +1,20 @@
-package com.curvelo.playmovies.presentation
+package com.curvelo.playmovies.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.curvelo.playmovies.LoadingStatus
+import com.curvelo.playmovies.data.remoto.ApiClient
+import com.curvelo.playmovies.data.remoto.MovieApiService
+import com.curvelo.playmovies.data.remoto.MovieDataSourceImpl
+import com.curvelo.playmovies.data.remoto.MovieRepository
+import com.curvelo.playmovies.domain.model.LoadingStatus
 import com.curvelo.playmovies.databinding.ActivityMainBinding
-import com.curvelo.playmovies.domain.MovieRepositoryImpl
+import com.curvelo.playmovies.data.remoto.MovieRepositoryImpl
+import com.curvelo.playmovies.domain.repository.GetPopularMoviesUseCase
+import com.curvelo.playmovies.domain.repository.SearchMoviesUseCase
+import com.curvelo.playmovies.presentation.viewModel.MoviesViewModel
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +28,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel = MoviesViewModel(MovieRepositoryImpl())
+        val movieApiService = ApiClient.retrofit.create(MovieApiService::class.java)
+        val movieDataSource = MovieDataSourceImpl(movieApiService)
+        val movieRepository = MovieRepositoryImpl(movieDataSource)
+        val searchMoviesUseCase = SearchMoviesUseCase(movieRepository)
+        val getPopularMoviesUseCase = GetPopularMoviesUseCase(movieRepository)
+
+        viewModel = MoviesViewModel(searchMoviesUseCase, getPopularMoviesUseCase)
         adapter = MovieAdapter()
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this)

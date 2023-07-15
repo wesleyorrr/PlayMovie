@@ -1,4 +1,4 @@
-package com.curvelo.playmovies
+package com.curvelo.playmovies.domain.model
 
 enum class LoadingStatus {
     LOADING,
