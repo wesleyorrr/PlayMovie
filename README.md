@@ -35,4 +35,4 @@ O Movie App é um aplicativo de filmes que utiliza a API do The Movie Database (
 		     <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img8.jpg" height="425" />
 		  	 <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img9.jpg" height="425" />
        				  <img src="https://github.com/wesleyorrr/PlayMovie/blob/feature/MY_PROJECT/img10.jpg" height="425" />
->>>>>>> b61e58ee94ba587dc94b4c46c014a7557de6af91
+
