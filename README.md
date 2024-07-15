@@ -19,7 +19,9 @@ O Movie App é um aplicativo de filmes que utiliza a API do The Movie Database (
 - RecyclerView: componente para exibição eficiente de listas
 - Picasso: biblioteca para carregamento e exibição de imagens
 - LiveData: componente do Android Jetpack para reatividade dos dados
-- ViewModel: componente do Android Jetpack para gerenciamento de estado
+- ViewModel: componente do Android
+- MVVM
+ - Jetpack para gerenciamento de estado
 - Coroutines: biblioteca para programação assíncrona baseada em concorrência estruturada
 - Gson: biblioteca para serialização e desserialização de objetos JSON
 - Material Design: diretrizes de design para criação de interfaces de usuário intuitivas e atrativas
