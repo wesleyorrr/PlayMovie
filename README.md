@@ -1,6 +1,6 @@
 ## PlayMovie
 
-## Descrição
+# Descrição
 
 O Movie App é um aplicativo de filmes que utiliza a API do The Movie Database (TMDb) para buscar informações sobre filmes, exibir listas de filmes populares e detalhes de filmes específicos. O projeto é baseado na arquitetura MVVM e Clean Architecture e foi desenvolvido em Kotlin. Utiliza bibliotecas populares como Retrofit, RecyclerView e Picasso para facilitar a comunicação com a API e a exibição de dados.
 
